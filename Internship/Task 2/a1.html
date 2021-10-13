@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title> Shivam Chand </title>
+</head>
+
+<body style="background-color:powderblue">
+
+	<h1>JavaScript String Methods</h1>
+	<br>
+	<h2><b>1. Length</b></h2>
+	<p><b>String Used : ABCDEFGHIJKLMNOPQRSTU </b></p>
+	<p>Extracting length</p>
+	<p id="demo"></p>
+
+	<h2><b>2. Slice/Substring/Substr</b></h2>
+	<p><b>String Used : Apple, Banana, Kiwi </b></p>
+	<p>Extracting substring from 7 to 13</p>
+	<p id="demo1"></p>
+
+	<h2><b>3. Replace</b></h2>
+	<p><b>String Used : Please visit Patna! </b></p>
+	<p>Replacing Patna to Delhi</p>
+	<p id="demo2"></p>
+
+	<h2><b>4. Upper/Lower Case</b></h2>
+	<p><b>String Used : Hello World! </b></p>
+	<p>Converting to upper & lower case</p>
+	<p id="demo3"></p>
+	<p id="demo4"></p>
+
+	<h2><b>5. Concat</b></h2>
+	<p><b>1st String Used : Hello </b></p>
+	<p><b>2nd String Used : World! </b></p>
+	<p>Concatenating both strings</p>
+	<p id="demo5"></p>
+
+	<h2><b>6. Trim</b></h2>
+	<p><b>String Used :       Hello World! (With Spaces)</b></p>
+	<p>Trimming both sides</p>
+	<p id="demo6"></p>
+
+	<h2><b>7. CharAt</b></h2>
+	<p><b>String Used :Hello World!</b></p>
+	<p>Character at 0</p>
+	<p id="demo7"></p>
+
+
+
+<script>
+let text = "ABCDEFGHIJKLMNOPQRSTU";
+document.getElementById("demo").innerHTML = text.length;
+</script>
+
+<script>
+let text1 = "Apple, Banana, Kiwi";
+document.getElementById("demo1").innerHTML = text1.slice(7, 13);
+</script>
+
+<script>
+let text2 = "Please visit Patna!";
+document.getElementById("demo2").innerHTML = text2.replace("Patna", "Delhi");
+</script>
+
+<script>
+let text3 = "Hello World!";
+document.getElementById("demo3").innerHTML = text3.toUpperCase();
+document.getElementById("demo4").innerHTML = text3.toLowerCase();
+</script>
+
+<script>
+let text4 = "Hello";
+let text5 = " World!";
+document.getElementById("demo5").innerHTML = text4.concat(text5);
+</script>
+
+<script>
+let text6 = "        Hello World!        ";
+document.getElementById("demo6").innerHTML = text6.trim();
+</script>
+
+<script>
+let text7 = "Hello World!";
+document.getElementById("demo7").innerHTML = text7.charAt(0);
+</script>
+
+
+
+
+</body>
+</html>

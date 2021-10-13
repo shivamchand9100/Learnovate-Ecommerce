@@ -1,0 +1,178 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="Assests/form.css">
+	<h1 class="abc"; align="center"; style="color:red";> <span>Job Application Form</span> </h1>
+    	<p class="def"; align="center";>
+      	Congratulations on making your way through the first round
+    	</p>
+<title> Shivam Chand </title>
+</head>
+
+
+<body>
+
+  <form action="Assests/Submission.html">
+    <div>
+      <label>Name</label>
+      <input
+        type="text"
+	id="txtName"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+
+    <div>
+      <label>Email</label>
+      <input
+        type="email"
+	id="txtEmail"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+
+    <div>
+      <label>Age(optional)</label>
+      <input
+        type="number"
+	id="txtAge"
+        min="10"
+        max="99"
+        placeholder="Age"
+      />
+    </div>
+
+<br>
+
+    <div>
+      <label>Password</label>
+      <input
+        type="password"
+	id="txtPass"
+        placeholder="Enter your Password"
+        required
+      />
+    </div>
+
+<br>
+<p class="ade";>Click on the "Choose File" button to upload your photo:</p>
+<input type="file" id="myFile" name="filename">
+
+<br>
+<br>
+
+    <div>
+      <p class="ade";>Which option best describes your current position?</p>
+      <select id="selCountry" required>
+        <option disabled selected value>Select current role</option>
+        <option>Student</option>
+        <option>Professional (0-2 Years Of Experience)</option>
+        <option>Professional (3-5 Years Of Experience)</option>
+        <option>Professional (More than 5 Years Of Experience)</option>
+        <option>Other</option>
+      </select>
+    </div>
+
+<br>
+<br>
+
+    <div>
+      <p class="ade";>Are you satisfied with the first-round selection process?</p>
+      <label>
+        <input
+	  name="user-recommend"
+          type="radio"
+	  checked
+        />Definitely  
+      </label>
+      
+      <label>
+        <input
+          name="user-recommend"
+          type="radio"
+        />Maybe
+      </label>
+
+      <label>
+	<input
+	  name="user-recommend"
+          type="radio"
+        />Not sure
+      </label
+      >
+    </div>
+
+<br>
+<br>
+
+    <div>
+      <p class="ade";>
+        Why are you willing to apply for this job?
+      </p>
+      <select id="selCountry2" required>
+        <option disabled selected value>Select an option</option>
+        <option>To Gain Knowledge</option>
+        <option>To Improve Your Financial Condition</option>
+        <option>To Pursue Higher Studies</option>
+        <option>Other Reasons</option>
+      </select>
+    </div>
+
+<br>
+<br>
+
+    <div>
+      <p class="ade";>
+        What do you wish to see improved in our company? (Check all that apply)</p>
+
+      <label>
+	<input
+          type="checkbox"
+        />Front-end Projects
+      </label>
+      <label>
+        <input
+          type="checkbox"
+        />Back-end Projects
+      </label>
+      <label>
+	<input
+          type="checkbox"
+        />Data Visualization
+      </label>
+      <label>
+	<input
+          type="checkbox"
+        />Challenges
+      </label>
+      <label>
+	<input
+          type="checkbox"
+        />Open Source Community
+      </label>
+    </div>
+
+<br>
+<br>
+
+    <div>
+      <p class="ade";>Any comments or suggestions?</p>
+      <textarea 
+        id="msg"
+	name="msg"
+	placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+      
+<br>
+<br>
+	
+    <div>
+      <input type="submit" id="bt" class="submit" value="Submit" />
+      </button>
+    </div>
+  </form>
+</body>
+</html>
